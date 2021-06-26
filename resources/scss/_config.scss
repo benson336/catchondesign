@@ -1,0 +1,15 @@
+$background-color: #f2f4f7;
+$body-color: rgb(44, 43, 43);
+$header-color-one: #313764;
+$header-color-two: #e8b80ee0;
+
+$font-family-calibre: "calibre", sans-serif;
+$font-family-mono: "DM Mono", monospace;
+$font-family-roboto: "Roboto", monospace;
+
+$font-size-header-desktop: 20px;
+$font-size-header-mobile: 17px;
+
+@mixin easeOut {
+    transition: all 0.3s ease-out;
+}

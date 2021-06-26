@@ -1,0 +1,88 @@
+@media (min-width: 375px) {
+    .jumbotronCustom {
+        .featuredContent {
+            width: 100%;
+            height: 320px;
+            position: relative;
+            overflow: hidden;
+            img {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                z-index: 1;
+                width: 100%;
+                height: auto;
+            }
+            .featuredContentBg {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                z-index: 2;
+                width: 100%;
+                height: 320px;
+                background: linear-gradient(
+                    to bottom right,
+                    rgb(107 79 28 / 72%),
+                    rgb(2 25 53 / 84%)
+                );
+            }
+            .mainTitle {
+                //background: rgba(17, 20, 172, 0.486);
+                position: absolute;
+                z-index: 3;
+                top: 15%;
+                left: 20%;
+                right: 20%;
+                text-align: center;
+                h1 {
+                    font-family: "Raleway", sans-serif;
+                    color: white;
+                    font-size: 22px;
+                }
+                h3 {
+                    color: #ae9436e0;
+                    font-size: 14px;
+                }
+                h4 {
+                    color: #c5c5c5e0;
+                }
+                .buttonOne {
+                    display: inline-block;
+                    padding: 12px;
+                    margin-top: 0;
+                    border-radius: 20px;
+                    background-color: #0000006e;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .jumbotronCustom {
+        .featuredContent {
+            height: 600px;
+            position: relative;
+            overflow: hidden;
+
+            .featuredContentBg {
+                height: 700px;
+            }
+            .mainTitle {
+                top: 18%;
+                left: 30%;
+                right: 30%;
+                h1 {
+                    font-size: 42px;
+                    .hi {
+                        font-size: 50px;
+                    }
+                }
+                .buttonOne {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

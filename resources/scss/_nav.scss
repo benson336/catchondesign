@@ -1,0 +1,63 @@
+@media (min-width: 375px) {
+    .navbarCustom {
+        font-family: $font-family-mono;
+        font-weight: 500;
+        background: #615d5d26;
+    }
+    .navbar-nav-item {
+        list-style-type: none;
+        text-decoration: none;
+        //color: $body-color;
+
+        .navbar-nav-link {
+            text-decoration: none;
+            font-size: 14px;
+            color: rgb(34, 33, 33);
+        }
+        .navbar-nav-link span {
+            color: $header-color-two;
+        }
+    }
+    .navbarCustom:hover {
+        background: rgba(46, 46, 46, 0.514);
+        transition: background 0.3s ease-in-out;
+    }
+    .navbar-nav-link:hover {
+        color: $header-color-two;
+    }
+}
+
+@media (min-width: 768px) {
+    .navbarCustom {
+        font-family: $font-family-mono;
+        font-weight: 500;
+        width: 100%;
+        position: fixed;
+        z-index: 43;
+        .navbar-navCustom {
+            display: flex;
+            justify-content: flex-end;
+            .navbar-nav-item {
+                list-style-type: none;
+                padding: 10px 20px;
+                text-decoration: none;
+                color: $body-color;
+                .navbar-nav-link {
+                    color: white;
+                    text-decoration: none;
+                    font-size: 14px;
+                }
+                .navbar-nav-link span {
+                    color: $header-color-two;
+                }
+            }
+        }
+    }
+    .navbarCustom:hover {
+        background: rgba(46, 46, 46, 0.514);
+        transition: background 0.3s ease-in-out;
+    }
+    .navbar-nav-link:hover {
+        color: $header-color-two;
+    }
+}

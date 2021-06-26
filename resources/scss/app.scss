@@ -1,0 +1,35 @@
+@import "config";
+@import "menu";
+@import "nav";
+@import "jumbotron";
+@import "secOne";
+@import "secTwo";
+@import "secThree";
+@import "secSix";
+@import "footer";
+@import "dashboard";
+
+* {
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    --main-color: #457aa0;
+    --color-dark: #1d2231;
+    --text-grey: #8390a2;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $background-color;
+    height: 100%;
+    margin: 0;
+    font-family: $font-family-calibre;
+    color: $body-color;
+}
+
+a {
+    text-decoration: none;
+}

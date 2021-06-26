@@ -1,0 +1,92 @@
+@media (min-width: 375px) {
+    .menu-btn {
+        position: absolute;
+        z-index: 5;
+        right: 35px;
+        top: 35px;
+        cursor: pointer;
+        @include easeOut;
+        visibility: visible;
+
+        .btn-line {
+            width: 28px;
+            height: 3px;
+            margin: 0 0 5px 0;
+            background: black;
+            @include easeOut;
+        }
+
+        //Cross shows up
+        &.close {
+            transform: rotate(180deg);
+            .btn-line {
+                &:nth-child(1) {
+                    transform: rotate(45deg) translate(5px, 5px);
+                    background: black;
+                    z-index: 5;
+                }
+                &:nth-child(2) {
+                    visibility: hidden;
+                    z-index: 5;
+                }
+                &:nth-child(3) {
+                    transform: rotate(-45deg) translate(7px, -6px);
+                    background: black;
+                    z-index: 5;
+                }
+            }
+        }
+    }
+
+    //Menu shows up
+    .menu {
+        position: fixed;
+        z-index: 4;
+        top: 0;
+        width: 100%;
+        opacity: 0.9;
+        font-family: $font-family-mono;
+        visibility: hidden;
+        font-weight: 500;
+        background: #898b8c;
+        &.show {
+            visibility: visible;
+        }
+
+        .menu-nav {
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100vh;
+            //margin: 0;
+            //padding: 0;
+            list-style: none;
+            transform: translate3d(0, -100%, 0);
+            @include easeOut;
+            &.show {
+                transform: translate3d(0, 0, 0);
+            }
+            .menu-nav-item {
+                padding-top: 15px;
+                font-size: 17px;
+                font-weight: 900;
+            }
+            .menu-nav-link {
+                color: black;
+                span {
+                    color: $header-color-two;
+                }
+            }
+            //float: left;
+            //overflow: hidden;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .menu-btn {
+        visibility: hidden;
+    }
+}
