@@ -44,6 +44,10 @@ class ProjectController extends Controller
     public function show(Request $request){
         $project = Project::where('id', $request->id)->first();
         //return $project->inspirations;
+        
+        if(Auth::id() !== $project->user_id){
+            return redirect()->route('project');
+        }
         return view('projects.show')->with('project', $project);
     }
 
@@ -78,6 +82,7 @@ class ProjectController extends Controller
     public function edit(Request $request){
         //$project = Project::find($request->id);
         $project = Project::where('id', $request->id)->first();
+
         return view('projects.edit')->with('project',$project);
     }
 

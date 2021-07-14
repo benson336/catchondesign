@@ -118,8 +118,8 @@
 				<h1 style="font-family: 'Staatliches', cursive; font-size:50px;"><strong>USE BELOW LOGIN FOR DEMO</strong></h1>
 				<hr>
 		
-				<h6 style="color:#598be5; font-family: 'Baloo Tammudu 2', cursive;"><i><strong>Login:</strong> admin@gmail.com</i></h6>
-				<h6 style="color:#598be5; font-family: 'Baloo Tammudu 2', cursive;"><i><strong>Password:</strong> admin123456</i></h6>
+				<h6 style="color:#598be5; font-family: 'Baloo Tammudu 2', cursive;"><i><strong>Login:</strong> chaopin@gmail.com</i></h6>
+				<h6 style="color:#598be5; font-family: 'Baloo Tammudu 2', cursive;"><i><strong>Password:</strong> chaopin123456</i></h6>
 				<button type="button" class="btn btn-primary"><a style="color:white; text-decoration:none;" href="{{ route('login') }}">{{ __('Login') }}</a></button>
 
 				<!--<form action="" method="post" id="searchFrom">
