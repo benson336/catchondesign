@@ -39,6 +39,8 @@ class UserController extends Controller
     function store(Request $request)
     {
         //return request()->all();
+        //return $request->get('email');
+
         User::create([
             'name' => $request->name,
             'email' => $request->email,
@@ -54,6 +56,7 @@ class UserController extends Controller
             'email' => $request->email,
             'password' => Hash::make($request->password),
             ]);
+
         return redirect()->route('user');
     }
     

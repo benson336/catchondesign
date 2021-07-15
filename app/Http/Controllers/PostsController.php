@@ -45,6 +45,11 @@ class PostsController extends Controller
      */
     public function store(Request $request)
     {
+        /*$this->validate($request, [
+            'email' => 'required|email',
+            'password' => 'required'|confirmed,
+        ]);*/
+
         $validated = $request->validate([
             'title' => 'required|unique:posts|max:255',
             'body' => 'required',
